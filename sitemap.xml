@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 1. Halaman Utama (Homepage) -->
+  <url>
+    <loc>https://maroonarsitek.web.id/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 2. Halaman Tentang Kami -->
+  <url>
+    <loc>https://maroonarsitek.web.id/tentang-kami.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 3. Halaman Galeri Portofolio Proyek -->
+  <url>
+    <loc>https://maroonarsitek.web.id/galeri.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 4. Halaman Blog & Tips Arsitektur -->
+  <url>
+    <loc>https://maroonarsitek.web.id/blog.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 5. Layanan: Jasa Desain Arsitek -->
+  <url>
+    <loc>https://maroonarsitek.web.id/jasa-arsitek.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 6. Layanan: Jasa Kontraktor Rumah -->
+  <url>
+    <loc>https://maroonarsitek.web.id/jasa-kontraktor-rumah.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 7. Layanan: Jasa Kontraktor Bangunan Komersial -->
+  <url>
+    <loc>https://maroonarsitek.web.id/jasa-kontraktor-bangunan.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 8. Layanan: Jasa Renovasi Rumah & Bangunan -->
+  <url>
+    <loc>https://maroonarsitek.web.id/jasa-renovasi.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 9. Layanan: Jasa Desain Interior -->
+  <url>
+    <loc>https://maroonarsitek.web.id/jasa-desain-interior.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 10. Artikel Pilar: Jasa Arsitek Profesional untuk Rumah & Bangunan Komersial -->
+  <url>
+    <loc>https://maroonarsitek.web.id/jasa-arsitek-profesional-rumah-bangunan.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 11. Artikel Cluster 1: Biaya Jasa Arsitek Rumah: Rincian & Faktor Penentu -->
+  <url>
+    <loc>https://maroonarsitek.web.id/biaya-jasa-arsitek-rumah.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 12. Artikel Cluster 2: Cara Memilih Jasa Arsitek Rumah yang Tepat & Berpengalaman -->
+  <url>
+    <loc>https://maroonarsitek.web.id/cara-memilih-jasa-arsitek-rumah.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 13. Artikel Cluster 3: Proses Desain Rumah: Tahapan Konsultasi hingga Gambar Kerja -->
+  <url>
+    <loc>https://maroonarsitek.web.id/proses-desain-rumah-tahapan.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

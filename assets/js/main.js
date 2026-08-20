@@ -152,12 +152,43 @@
 
   /* ── AOS init ───────────────────────────────────────────────────────────── */
   if (typeof AOS !== 'undefined') {
-    AOS.init({ duration: 700, easing: 'ease-in-out', once: true, offset: 60 });
+    AOS.init({ duration: 650, easing: 'ease-in-out', once: true, offset: 40, mirror: false });
   }
 
   /* ── GLightbox ──────────────────────────────────────────────────────────── */
   if (typeof GLightbox !== 'undefined') {
     GLightbox({ selector: '.glightbox' });
+  }
+
+  /* ── Testimonials Swiper Slider ─────────────────────────────────────────── */
+  if (typeof Swiper !== 'undefined') {
+    new Swiper('.testimonials-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 28
+        }
+      }
+    });
   }
 
   /* ── Portfolio filter (Isotope) ─────────────────────────────────────────── */
@@ -169,11 +200,24 @@
       imagesLoaded(portfolioContainer, function () {
         const iso = new Isotope(portfolioContainer, {
           itemSelector: '.portfolio-item-wrap',
-          layoutMode: 'fitRows',
+          layoutMode: 'masonry',
+          percentPosition: true,
+          transitionDuration: '0.45s',
+          hiddenStyle: {
+            opacity: 0,
+            transform: 'scale(0.85)'
+          },
+          visibleStyle: {
+            opacity: 1,
+            transform: 'scale(1)'
+          }
         });
+
         document.querySelectorAll('.portfolio-filter-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
-            document.querySelector('.portfolio-filter-btn.active').classList.remove('active');
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const activeBtn = document.querySelector('.portfolio-filter-btn.active');
+            if (activeBtn) activeBtn.classList.remove('active');
             this.classList.add('active');
             iso.arrange({ filter: this.dataset.filter });
           });
@@ -213,7 +257,12 @@
     el.addEventListener('click', function (e) {
       e.preventDefault();
       const type = this.dataset.wa || 'cta';
-      const msg  = encodeURIComponent(WA_MESSAGES[type] || WA_MESSAGES.cta);
+      const project = this.dataset.project;
+      let text = WA_MESSAGES[type] || WA_MESSAGES.cta;
+      if (project) {
+        text = `Halo Maroon Arsitek, saya tertarik dengan proyek "${project}" di galeri Anda dan ingin konsultasi.`;
+      }
+      const msg = encodeURIComponent(text);
       window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank');
     });
   });
