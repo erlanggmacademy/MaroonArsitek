@@ -273,6 +273,14 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
+}
+.brand-logo-img {
+  height: 42px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
 }
 .brand-logo-mark {
   width: 40px; height: 40px;
@@ -1600,6 +1608,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 575px) {
 
   /* Header */
+  .brand-logo-img { height: 34px; max-width: 170px; }
   .brand-tagline { display: none; }
   .brand-name    { font-size: 1.1rem; }
   .brand-logo-mark { width: 36px; height: 36px; font-size: 1rem; }
