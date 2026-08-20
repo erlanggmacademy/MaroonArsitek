@@ -35,7 +35,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-  <!-- Preload Critical LCP Image -->
+  <!-- Preload Critical LCP Images (Mobile Background & Desktop Hero) -->
+  <link rel="preload" as="image" href="assets/img/hero/hero-bg.webp" type="image/webp" fetchpriority="high" />
   <link rel="preload" as="image" href="assets/img/galeri/arsitektur-rumah-mewah-modern.webp" type="image/webp" fetchpriority="high" />
 
   <link
@@ -50,7 +51,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=1.1" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -100,7 +101,7 @@
 
         <!-- Brand (kiri) -->
         <a href="index.html" class="navbar-brand" aria-label="Maroon Arsitek — Halaman Utama">
-          <img src="assets/img/logo-header.webp" alt="Maroon Arsitek" class="brand-logo-img" height="48" />
+          <img src="assets/img/logo-header.webp" alt="Maroon Arsitek" class="brand-logo-img" width="144" height="48" />
         </a>
 
         <!-- Nav items (tengah — absolute center) -->
@@ -1046,7 +1047,7 @@
           <div class="footer-brand">
             <a href="index.html" class="navbar-brand" aria-label="Maroon Arsitek">
               <img src="assets/img/logo-header.webp" alt="Maroon Arsitek" class="brand-logo-img footer-logo-img"
-                height="46" />
+                width="138" height="46" />
             </a>
           </div>
           <p class="footer-desc">
@@ -1137,7 +1138,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=1.1" defer></script>
 
   <!-- Footer year -->
   <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('footer-year');if(el)el.textContent=new Date().getFullYear();});</script>

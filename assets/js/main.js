@@ -8,17 +8,26 @@
 
   /* ── Header scroll behavior ─────────────────────────────────────────────── */
   const header = document.getElementById('header');
+  const scrollTopBtn = document.querySelector('.scroll-top');
+  let isScrolling = false;
+
+  function updateScrollState() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    if (header) header.classList.toggle('scrolled', scrollY > 60);
+    if (scrollTopBtn) scrollTopBtn.classList.toggle('active', scrollY > 300);
+    isScrolling = false;
+  }
+
   function onScroll() {
-    if (!header) return;
-    header.classList.toggle('scrolled', window.scrollY > 60);
-    const btn = document.querySelector('.scroll-top');
-    btn && btn.classList.toggle('active', window.scrollY > 300);
+    if (!isScrolling) {
+      window.requestAnimationFrame(updateScrollState);
+      isScrolling = true;
+    }
   }
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  updateScrollState();
 
   /* ── Scroll to top ──────────────────────────────────────────────────────── */
-  const scrollTopBtn = document.querySelector('.scroll-top');
   scrollTopBtn && scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
