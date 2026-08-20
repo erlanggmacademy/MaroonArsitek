@@ -30,9 +30,14 @@
   <!-- Favicons -->
   <link rel="icon" type="image/webp" href="assets/img/favicon-logo.webp" />
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts & CDN Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <!-- Preload Critical LCP Image -->
+  <link rel="preload" as="image" href="assets/img/galeri/arsitektur-rumah-mewah-modern.webp" type="image/webp" fetchpriority="high" />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
     rel="stylesheet" />
@@ -252,7 +257,7 @@
               <div class="hero-main-img">
                 <img src="assets/img/galeri/arsitektur-rumah-mewah-modern.webp"
                   alt="Proyek rumah modern mewah 3 lantai — Maroon Arsitek Jakarta" width="600" height="460"
-                  loading="eager" />
+                  loading="eager" fetchpriority="high" decoding="async" />
               </div>
               <div class="hero-badge-float" data-aos="zoom-in" data-aos-delay="500">
                 <div>
@@ -424,32 +429,32 @@
 
         <div class="row proses-steps">
           <div class="col proses-step" data-aos="fade-up" data-aos-delay="0">
-            <div class="proses-num" aria-label="Langkah 1">1</div>
+            <div class="proses-num" aria-hidden="true">1</div>
             <h3 class="proses-title">Konsultasi</h3>
             <p class="proses-desc">Diskusikan kebutuhan, visi, dan anggaran proyek Anda</p>
           </div>
           <div class="col proses-step" data-aos="fade-up" data-aos-delay="100">
-            <div class="proses-num" aria-label="Langkah 2">2</div>
+            <div class="proses-num" aria-hidden="true">2</div>
             <h3 class="proses-title">Konsep</h3>
             <p class="proses-desc">Penyusunan konsep desain yang sesuai kebutuhan</p>
           </div>
           <div class="col proses-step" data-aos="fade-up" data-aos-delay="200">
-            <div class="proses-num" aria-label="Langkah 3">3</div>
+            <div class="proses-num" aria-hidden="true">3</div>
             <h3 class="proses-title">Desain</h3>
             <p class="proses-desc">Pengembangan desain 2D, 3D, dan gambar teknis lengkap</p>
           </div>
           <div class="col proses-step" data-aos="fade-up" data-aos-delay="300">
-            <div class="proses-num" aria-label="Langkah 4">4</div>
+            <div class="proses-num" aria-hidden="true">4</div>
             <h3 class="proses-title">RAB</h3>
             <p class="proses-desc">Rencana Anggaran Biaya yang transparan dan terperinci</p>
           </div>
           <div class="col proses-step" data-aos="fade-up" data-aos-delay="400">
-            <div class="proses-num" aria-label="Langkah 5">5</div>
+            <div class="proses-num" aria-hidden="true">5</div>
             <h3 class="proses-title">Pelaksanaan</h3>
             <p class="proses-desc">Pembangunan dengan pengawasan penuh dan berkala</p>
           </div>
           <div class="col proses-step" data-aos="fade-up" data-aos-delay="500">
-            <div class="proses-num" aria-label="Langkah 6">6</div>
+            <div class="proses-num" aria-hidden="true">6</div>
             <h3 class="proses-title">Serah Terima</h3>
             <p class="proses-desc">Quality control akhir dan serah terima proyek</p>
           </div>
@@ -611,12 +616,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div>
-                  <div class="testimonial-stars" aria-label="Rating 5 bintang">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                  <div class="testimonial-stars" role="img" aria-label="Rating 5 bintang">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
                   </div>
                   <p class="testimonial-quote">
                     "Maroon Arsitek sangat profesional dari tahap konsep denah hingga pembangunan selesai. Transparansi
@@ -637,12 +642,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div>
-                  <div class="testimonial-stars" aria-label="Rating 5 bintang">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                  <div class="testimonial-stars" role="img" aria-label="Rating 5 bintang">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
                   </div>
                   <p class="testimonial-quote">
                     "Hasil desain interior dan fasad rumah sangat memukau. Rumah lama kami disulap menjadi hunian modern
@@ -663,12 +668,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div>
-                  <div class="testimonial-stars" aria-label="Rating 5 bintang">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                  <div class="testimonial-stars" role="img" aria-label="Rating 5 bintang">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
                   </div>
                   <p class="testimonial-quote">
                     "Pengawasan konstruksi di lapangan sangat ketat dan teratur. Setiap minggu selalu ada laporan progres
@@ -689,12 +694,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div>
-                  <div class="testimonial-stars" aria-label="Rating 5 bintang">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                  <div class="testimonial-stars" role="img" aria-label="Rating 5 bintang">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
                   </div>
                   <p class="testimonial-quote">
                     "Konsep desain villa tropis modern yang dibuat Maroon Arsitek benar-benar melampaui ekspektasi.
@@ -715,12 +720,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div>
-                  <div class="testimonial-stars" aria-label="Rating 5 bintang">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                  <div class="testimonial-stars" role="img" aria-label="Rating 5 bintang">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
                   </div>
                   <p class="testimonial-quote">
                     "Tim Maroon Arsitek sangat komunikatif dan memahami kebutuhan bisnis F&amp;B kami. Desain interior
@@ -741,12 +746,12 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div>
-                  <div class="testimonial-stars" aria-label="Rating 5 bintang">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                  <div class="testimonial-stars" role="img" aria-label="Rating 5 bintang">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
                   </div>
                   <p class="testimonial-quote">
                     "Dari denah 2D, visual 3D photorealistic, hingga gambar kerja struktur dan MEP sangat detail.
@@ -1123,19 +1128,19 @@
 
 
   <!-- ══ VENDOR JS ══════════════════════════════════════════════════════════ -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
   <!-- Footer year -->
-  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('footer-year');if(el)el.textContent=new Date().getFullYear();});</script>
 
 </body>
 
