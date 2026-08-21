@@ -42,7 +42,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
   width: 100%;
 }
@@ -52,7 +52,7 @@ body {
   background-color: var(--color-offwhite);
   color: var(--color-charcoal);
   line-height: 1.7;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
   width: 100%;
   position: relative;
@@ -3218,11 +3218,19 @@ img {
 }
 
 /* Article Layout Grid */
+.blog-details-page .section,
+.blog-details-page main,
+.blog-details-page #main-content {
+  overflow: visible !important;
+  overflow-x: visible !important;
+}
+
 .article-layout {
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 40px;
   align-items: start;
+  position: relative;
 }
 
 @media (max-width: 991px) {
@@ -3694,6 +3702,27 @@ img {
 }
 
 /* Article Sidebar */
+.article-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 95px;
+  align-self: start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+@media (max-width: 991px) {
+  .article-sidebar {
+    position: static;
+    top: auto;
+    height: auto;
+  }
+}
+
 .sidebar-author-card {
   background: var(--color-white);
   border: 1px solid rgba(0, 0, 0, 0.08);
